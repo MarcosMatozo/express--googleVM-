@@ -5,8 +5,7 @@ const app = express();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(99999999999)
-  res.render('index', { title: 'Express Study' });
+  res.render('index', { title: 'Marcos Matozo - Portifólio' });
 });
 
 
