@@ -11,7 +11,4 @@ router.get('/', function(req, res, next) {
 
 
 
-
-// app.use('/public', express.static(path.join(__dirname, '../public')));  
-
 module.exports = router;
