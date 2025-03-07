@@ -21,11 +21,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/casamento', newAppRouter);
+// app.use('/casamento', newAppRouter);
 
 
 // app.use('/app-builds', express.static( path.join(__dirname , 'app-builds/app1') ));
-// app.use('/casamento', express.static( path.join(__dirname , 'public_pages', 'casamento' ) ));
+app.use('/casamento', express.static( path.join(__dirname , 'public_pages', 'casamento' ) ));
 
 
 
