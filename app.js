@@ -21,10 +21,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/casamento', newAppRouter);
 
 
-app.use('/app-builds', express.static( path.join(__dirname , 'app-builds/app1') ));
+// app.use('/app-builds', express.static( path.join(__dirname , 'app-builds/app1') ));
+// app.use('/casamento', express.static( path.join(__dirname , 'public_pages', 'casamento' ) ));
+
 
 
 // catch 404 and forward to error handler
