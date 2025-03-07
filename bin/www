@@ -19,10 +19,9 @@ const HTTPSoptions = {
   cert: fs.readFileSync(path.join(__dirname, 'certificate.crt' )),
 };
 
-https.createServer(HTTPSoptions, (req, res) => {
-  res.writeHead(200);
-  res.end('Em breve\n');
-}).listen(443);
+https.createServer(HTTPSoptions, app).listen(443, () => {
+  console.log('Servidor HTTPS rodando na porta 443');
+});
 
 /**
  * Get port from environment and store in Express.

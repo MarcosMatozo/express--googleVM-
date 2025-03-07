@@ -5,7 +5,7 @@ var router = express.Router();
 
 // app.use('/casamento', express.static( path.join(__dirname ,'..', 'public_pages', 'casamento' ) ));
 
-// router.use('/', express.static(path.join(__dirname, '..', 'public_pages', 'casamento')));
+router.use('/', express.static(path.join(__dirname, '..', 'public_pages', 'casamento')));
 
 module.exports = router;
 
