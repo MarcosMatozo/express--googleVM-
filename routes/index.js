@@ -4,9 +4,7 @@ const path = require('path');
 const app = express();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Marcos Matozo - Portifólio' });
-});
+router.use('/', express.static(path.join(__dirname, '..', 'public_pages', 'home')));
 
 
 
