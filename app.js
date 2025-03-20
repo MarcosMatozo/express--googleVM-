@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var newAppRouter = require('./routes/new-app');
+var googAIStd = require('./routes/google-ai-studio');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/casamento', newAppRouter);
 
+app.use('/googAIStd', googAIStd);
 
 
 // catch 404 and forward to error handler
